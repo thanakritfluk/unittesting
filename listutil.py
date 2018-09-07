@@ -27,3 +27,35 @@ def count_unique(list):
             check = i
     return count
 
+
+def binary_search(list, element):
+    """
+         Find the element from sorted list with Binary Search Algorithm.
+        :params list: sorted list of elements to search
+                element: element to search
+        :return: the index of element, -1 if not found.
+        >>> binary_search([34, 44, 102, 2], 1)
+        -1
+        >>> binary_search([5, 6, 7, 8, 9], 8)
+        3
+        >>> binary_search([10, 11, 12, 17, 25,50,75], 25)
+        4
+        >>> binary_search([0, 0, 0, 0, 0], 0)
+        2
+        >>> binary_search([1, 5, 10, 20, 25, 34, 68], 34)
+        5
+
+    """
+    if list is None:
+        raise TypeError("Search element must not be none")
+    first = 0
+    last = len(list) - 1
+    while first <= last:
+        mid = (first + last) // 2
+        if list[mid] == element:
+            return mid
+        if list[mid] < element:
+            first = mid + 1
+        else:
+            last = mid - 1
+    return -1
