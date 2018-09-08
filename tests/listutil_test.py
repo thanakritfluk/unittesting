@@ -54,7 +54,7 @@ class TestBinarySearch(unittest.TestCase):
         pick = 546
         for i in range(1, 1000):
             list.append(i)
-        self.assertEqual(binary_search(list, 546), 545)
+        self.assertEqual(binary_search(list, pick), 545)
 
 
 if __name__ == "__main__":
