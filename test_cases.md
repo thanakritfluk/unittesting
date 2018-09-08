@@ -1,9 +1,20 @@
-# Test include
+# Test for count unique
     
     
-    1.borderline cases, such as a list with 0 or 1 elements
-    2.typical cases, such as a list with a few duplicates or no duplicates
-    3.impossible cases where the method should not work
-    4.extreme cases, such as a very large list
-  
+   | Test case | Expected Reslt |
+   |--------------|--------|
+   | empty list   |    0   |
+   | same all element | 1|
+   | too many element | 99999|
+   | one element | 1|
+
     
+# Test for binary search
+
+  | Test case | Expected Reslt |
+   |--------------|--------|
+   | normal serach | 3|
+   | not found search |-1|
+   | none element search | TypeError|
+   | large list search | 545|
+   
