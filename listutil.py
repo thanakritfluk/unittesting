@@ -30,10 +30,10 @@ def count_unique(list):
 
 def binary_search(list, element):
     """
-         Find the element from sorted list with Binary Search Algorithm.
+         Find the element from sorted list with Binary Search.
         :params list: sorted list of elements to search
                 element: element to search
-        :return: the index of element, -1 if not found.
+        :return: index of element, -1 if not found.
         >>> binary_search([34, 44, 102, 2], 1)
         -1
         >>> binary_search([5, 6, 7, 8, 9], 8)
@@ -42,7 +42,7 @@ def binary_search(list, element):
         4
         >>> binary_search([0, 0, 0, 0, 0], 0)
         2
-        >>> binary_search([1, 5, 10, 20, 25, 34, 68], 34)
+        >>> binary_search([2, 6, 12, 20, 25, 34, 68], 34)
         5
 
     """
